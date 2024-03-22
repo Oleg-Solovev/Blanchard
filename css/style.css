@@ -107,6 +107,7 @@ svg {
   margin: 0;
   font-weight: 400;
   font-size: 48px;
+  word-wrap: break-word;
 }
 
 .visually-hidden {
@@ -131,8 +132,7 @@ svg {
 .btn {
   border-radius: 100px;
   padding: 22px 35px;
-  width: 314px;
-  height: 70px;
+  max-width: 314px;
   background-color: var(--anime-medium-color);
   font-weight: 700;
   font-size: 18px;
@@ -186,13 +186,14 @@ svg {
 }
 
 .header__nav {
-  max-width: 924px;
+  max-width: 950px;
   margin-right: auto;
 }
 
 .nav__list {
   align-content: center;
   gap: 85px;
+  flex-wrap: wrap;
 }
 
 .nav__link {
@@ -273,6 +274,7 @@ svg {
   font-size: 72px;
   line-height: 94%;
   color: #fff;
+  word-wrap: break-word;
 }
 
 .hero__descr {
@@ -445,6 +447,7 @@ svg {
 
 .catalog__cards-title {
   margin-bottom: 15px;
+  word-wrap: break-word;
 }
 
 .cards__date {
@@ -508,6 +511,7 @@ svg {
 .events__cards-title {
   line-height: 130%;
   margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .events__link {
@@ -609,22 +613,16 @@ svg {
   margin-bottom: 8px;
 }
 
-.form__label {
-  display: flex;
-  flex-direction: column-reverse;
-  /* текст ошибки сверху */
-}
-
 .form__label:hover .form__input {
   background-color: #ececec;
 }
 
 .contacts__btn {
-  width: 329px;
-  height: 50px;
+  max-width: 329px;
+  word-wrap: break-word;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
-  padding: 13px 33px;
+  padding: 10px 33px;
   font-size: 18px;
   font-weight: 700;
   color: #9d5cd0;
