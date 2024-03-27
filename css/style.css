@@ -588,7 +588,11 @@ svg {
 .contacts__container {
   display: flex;
   align-items: center;
-  gap: 80px;
+  justify-content: space-between;
+}
+
+.contacts__left {
+  max-width: 256px;
 }
 
 .contacts__descr {
@@ -597,20 +601,20 @@ svg {
 
 .form {
   display: flex;
-  padding-top: 10px;
   gap: 20px;
+  align-items: center;
+  max-width: 909px;
 }
 
 .form__input {
-  width: 242px;
-  padding-left: 24px;
+  max-width: 242px;
+  padding: 15px 38px;
   border: 1px solid #333;
   border-radius: 100px;
-  height: 47px;
   outline: none;
   color: #999;
   transition: background-color .3s ease-in-out;
-  margin-bottom: 8px;
+  background-color: transparent;
 }
 
 .form__label:hover .form__input {
@@ -618,11 +622,11 @@ svg {
 }
 
 .contacts__btn {
-  max-width: 329px;
+  max-width: 335px;
   word-wrap: break-word;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
-  padding: 10px 33px;
+  padding: 12px 36px;
   font-size: 18px;
   font-weight: 700;
   color: #9d5cd0;
@@ -647,6 +651,10 @@ svg {
   background-color: var(--anime-dark-color);
   border: 3px solid var(--border-color);
   color: #fff;
+}
+
+.contacts__messager {
+  max-width: 275px;
 }
 
 .messager__text {
