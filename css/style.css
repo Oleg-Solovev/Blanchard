@@ -73,7 +73,6 @@ svg {
   min-width: 320px;
   font-family: var(--font-family);
   font-weight: 400;
-  background-color: #F1F1F1;
   color: var(--text-color);
 }
 
@@ -131,7 +130,6 @@ svg {
 
 .btn {
   border-radius: 100px;
-  padding: 22px 35px;
   max-width: 314px;
   background-color: var(--anime-medium-color);
   font-weight: 700;
@@ -260,7 +258,7 @@ svg {
 
 .hero {
   padding-top: 146px;
-  padding-bottom: 171px;
+  padding-bottom: 146px;
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,13 +277,23 @@ svg {
 
 .hero__descr {
   margin: 0;
-  margin-bottom: 117px;
+  margin-bottom: 93px;
   max-width: 579px;
   font-weight: 700;
   font-size: 18px;
   line-height: 167%;
   color: #fff;
   letter-spacing: .7px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__btn {
+  padding: 24px 35px;
 }
 
 /* about */
@@ -307,14 +315,14 @@ svg {
 
 .galery {
   padding-top: 87px;
-  padding-bottom: 61px;
+  padding-bottom: 76px;
   background-image: url(../img/galery-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .galery__title {
-  margin-bottom: 6px;
+  margin-bottom: 24px;
   color: #fff;
 }
 
@@ -329,7 +337,7 @@ svg {
   flex-direction: column;
   justify-content: flex-end;
   width: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 3px;
 }
 
 .galery__checkbox {
@@ -407,7 +415,7 @@ svg {
 
 .catalog {
   padding-top: 87px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .catalog__title {
@@ -431,12 +439,10 @@ svg {
   gap: 50px;
 }
 
-.cards__image {
-  width: 100%
-}
-
 .cards__content {
   max-width: 800px;
+  flex-shrink: 3;
+  padding-top: 40px;
 }
 
 .cards-title {
@@ -465,7 +471,8 @@ svg {
 /* events */
 
 .events {
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .events__title {
@@ -554,7 +561,7 @@ svg {
 /* projects */
 
 .projects {
-  padding-top: 7px;
+  padding-top: 47px;
   padding-bottom: 77px;
 }
 
@@ -596,18 +603,21 @@ svg {
 }
 
 .contacts__descr {
-  width: 256px;
+  max-width: 256px;
 }
 
 .form {
   display: flex;
-  gap: 20px;
+  column-gap: 20px;
   align-items: center;
   max-width: 909px;
 }
 
+.form__label {
+  max-width: 270px;
+}
+
 .form__input {
-  max-width: 242px;
   padding: 15px 38px;
   border: 1px solid #333;
   border-radius: 100px;
@@ -626,7 +636,7 @@ svg {
   word-wrap: break-word;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
-  padding: 12px 36px;
+  padding: 12px 33px;
   font-size: 18px;
   font-weight: 700;
   color: #9d5cd0;
